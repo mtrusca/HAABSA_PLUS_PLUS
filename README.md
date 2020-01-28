@@ -13,7 +13,7 @@ HAABSA source code: https://github.com/ofwallaart/HAABSA
   - Hierarchical Attention: lcrModelAlt_hierarchical_v1, lcrModelAlt_hierarchical_v2, lcrModelAlt_hierarchical_v3, lcrModelAlt_hierarchical_v4;
   - Context-dependent word embeddings: getBERTusingColab.py, prepareBERT.py, prepareELMo.py;
   
-  ## Pre-trained word embeddings:
-  - GloVe: https://nlp.stanford.edu/projects/glove/
-  - Word2vec: https://code.google.com/archive/p/word2vec/
-  - FastText: https://fasttext.cc/docs/en/english-vectors.html
+ ## Pre-trained word embeddings:
+- GloVe: https://nlp.stanford.edu/projects/glove/
+- Word2vec: https://code.google.com/archive/p/word2vec/
+- FastText: https://fasttext.cc/docs/en/english-vectors.html
