@@ -43,5 +43,5 @@ thinc==6.10.2
 toolz==0.9.0
 tqdm==4.23.3
 ujson==1.35
-Werkzeug==0.14.1
+Werkzeug==0.15.3
 wrapt==1.10.11
