@@ -2,7 +2,7 @@
 The code for A Hybrid Approach for Aspect-Based Sentiment Analysis Using Contextual Word Emmbeddings and Hierarchical Attention
 
 The hybrid approach for aspect-based sentiment analysis (HAABSA) is a two-step method that classifies target sentiments using a domain sentiment ontology and a Multi-Hop LCR-Rot model as backup.
- - Original Paper: https://personal.eur.nl/frasincar/papers/ESWC2019/eswc2019.pdf
+ - HAABSA Paper: https://personal.eur.nl/frasincar/papers/ESWC2019/eswc2019.pdf
  
  Keeping the ontology, we optimise the embedding layer of the backup neural network with context-dependent word embeddings and integrate hierarchical attention in the model's architecture (HAABSA++).
  
