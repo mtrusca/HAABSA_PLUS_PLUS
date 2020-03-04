@@ -19,18 +19,28 @@ from config import *
 import numpy as np
 import sys
 
+import lcrModelAlt_hierarchical_v1
+import lcrModelAlt_hierarchical_v2
+import lcrModelAlt_hierarchical_v3
+import lcrModelAlt_hierarchical_v4
+
 # main function
 def main(_):
     loadData         = False        # only for non-contextualised word embeddings.
                                     #   Use prepareBERT for BERT (and BERT_Large) and prepareELMo for ELMo
     useOntology      = True         # When run together with runLCRROTALT, the two-step method is used
-    runLCRROTALT     = True
+    runLCRROTALT     = False
 
     runSVM           = False
     runCABASC        = False
     runLCRROT        = False
     runLCRROTINVERSE = False
     weightanalysis   = False
+
+    runLCRROTALT_v1     = True
+    runLCRROTALT_v2     = False
+    runLCRROTALT_v3     = False
+    runLCRROTALT_v4     = False
 
     #determine if backupmethod is used
     if runCABASC or runLCRROT or runLCRROTALT or runLCRROTINVERSE or runSVM:
@@ -67,6 +77,26 @@ def main(_):
     # LCR-Rot-hop model
     if runLCRROTALT == True:
        _, pred2, fw2, bw2, tl2, tr2 = lcrModelAlt.main(FLAGS.train_path, test, accuracyOnt, test_size,
+                                                        remaining_size)
+       tf.reset_default_graph()
+
+    if runLCRROTALT_v1 == True:
+       _, pred2, fw2, bw2, tl2, tr2 = lcrModelAlt_hierarchical_v1.main(FLAGS.train_path, test, accuracyOnt, test_size,
+                                                        remaining_size)
+       tf.reset_default_graph()
+
+    if runLCRROTALT_v2 == True:
+       _, pred2, fw2, bw2, tl2, tr2 = lcrModelAlt_hierarchical_v2.main(FLAGS.train_path, test, accuracyOnt, test_size,
+                                                        remaining_size)
+       tf.reset_default_graph()
+
+    if runLCRROTALT_v3 == True:
+       _, pred2, fw2, bw2, tl2, tr2 = lcrModelAlt_hierarchical_v3.main(FLAGS.train_path, test, accuracyOnt, test_size,
+                                                        remaining_size)
+       tf.reset_default_graph()
+
+    if runLCRROTALT_v4 == True:
+       _, pred2, fw2, bw2, tl2, tr2 = lcrModelAlt_hierarchical_v4.main(FLAGS.train_path, test, accuracyOnt, test_size,
                                                         remaining_size)
        tf.reset_default_graph()
 
