@@ -146,7 +146,7 @@ def main(train_path, test_path, accuracyOnt, test_size, remaining_size, learning
         else:
             is_r = False
 
-        _, tr_x, tr_sen_len, tr_x_bw, tr_sen_len_bw, tr_y, tr_target_word, tr_tar_len, _, _, _ = load_inputs_twitter(
+        tr_x, tr_sen_len, tr_x_bw, tr_sen_len_bw, tr_y, tr_target_word, tr_tar_len, _, _, _ = load_inputs_twitter(
             train_path,
             word_id_mapping,
             FLAGS.max_sentence_len,
@@ -154,7 +154,7 @@ def main(train_path, test_path, accuracyOnt, test_size, remaining_size, learning
             is_r,
             FLAGS.max_target_len
         )
-        _, te_x, te_sen_len, te_x_bw, te_sen_len_bw, te_y, te_target_word, te_tar_len, _, _, _ = load_inputs_twitter(
+        te_x, te_sen_len, te_x_bw, te_sen_len_bw, te_y, te_target_word, te_tar_len, _, _, _ = load_inputs_twitter(
             test_path,
             word_id_mapping,
             FLAGS.max_sentence_len,
