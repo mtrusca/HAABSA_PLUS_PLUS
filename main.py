@@ -43,7 +43,7 @@ def main(_):
     runLCRROTALT_v4     = False
 
     #determine if backupmethod is used
-    if runCABASC or runLCRROT or runLCRROTALT or runLCRROTINVERSE or runSVM:
+    if runCABASC or runLCRROT or runLCRROTALT or runLCRROTINVERSE or runSVM or runLCRROTALT_v1 or runLCRROTALT_v2 or runLCRROTALT_v3 or runLCRROTALT_v4:
         backup = True
     else:
         backup = False
