@@ -18,12 +18,12 @@ The training and testing datasets are in the Data folder for SemEval 2015 and Se
 *Even if the model is trained with contextul word emebddings, the ontology has to run on a dataset special designed for the non-contextual case.
   
  ## Word embeddings:
- Glove word embeddings (SemEval 2015): https://drive.google.com/file/d/14Gn-gkZDuTVSOFRPNqJeQABQxu-bZ5Tu/view?usp=sharing
- Glove word embeddings (SemEval 2016): https://drive.google.com/file/d/1UUUrlF_RuzQYIw_Jk_T40IyIs-fy7W92/view?usp=sharing
- ELMo word embeddings (SemEval 2015): https://drive.google.com/file/d/1GfHKLmbiBEkATkeNmJq7CyXGo61aoY2l/view?usp=sharing
- ELMo word embeddings (SemEval 2016): https://drive.google.com/file/d/1OT_1p55LNc4vxc0IZksSj2PmFraUIlRD/view?usp=sharing
- BERT word embeddings (SemEval 2015): https://drive.google.com/file/d/1wZr4_g3fDy47-vXzLGX8ERIr2gIu-RYn/view?usp=sharing
- BERT word embeddings (SemEval 2016): https://drive.google.com/file/d/1eOc0pgbjGA-JVIx4jdA3m1xeYaf0xsx2/view?usp=sharing
+ - Glove word embeddings (SemEval 2015): https://drive.google.com/file/d/14Gn-gkZDuTVSOFRPNqJeQABQxu-bZ5Tu/view?usp=sharing
+ - Glove word embeddings (SemEval 2016): https://drive.google.com/file/d/1UUUrlF_RuzQYIw_Jk_T40IyIs-fy7W92/view?usp=sharing
+ - ELMo word embeddings (SemEval 2015): https://drive.google.com/file/d/1GfHKLmbiBEkATkeNmJq7CyXGo61aoY2l/view?usp=sharing
+ - ELMo word embeddings (SemEval 2016): https://drive.google.com/file/d/1OT_1p55LNc4vxc0IZksSj2PmFraUIlRD/view?usp=sharing
+ - BERT word embeddings (SemEval 2015): https://drive.google.com/file/d/1wZr4_g3fDy47-vXzLGX8ERIr2gIu-RYn/view?usp=sharing
+ - BERT word embeddings (SemEval 2016): https://drive.google.com/file/d/1eOc0pgbjGA-JVIx4jdA3m1xeYaf0xsx2/view?usp=sharing
  
 Download pre-trained word emebddings: 
 - GloVe: https://nlp.stanford.edu/projects/glove/
