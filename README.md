@@ -8,12 +8,24 @@ The hybrid approach for aspect-based sentiment analysis (HAABSA) is a two-step m
  
  ## Software
 HAABSA source code: https://github.com/ofwallaart/HAABSA 
-- Updated files: att_layer.py, main.py, main_cross.py and main_hyper.py.
+- Updated files: config.py, att_layer.py, main.py, main_cross.py and main_hyper.py.
 - New files: 
   - Hierarchical Attention: lcrModelAlt_hierarchical_v1, lcrModelAlt_hierarchical_v2, lcrModelAlt_hierarchical_v3, lcrModelAlt_hierarchical_v4;
-  - Context-dependent word embeddings: getBERTusingColab.py, prepareBERT.py, prepareELMo.py;
+  - Context-dependent word embeddings: getBERTusingColab.py, prepareBERT.py, prepareELMo.py (the files raw_data2015.txt and raw_data2016.txt are in the Data folder);
+
+The training and testing datasets are in the Data folder for SemEval 2015 and SemEval 2016. The files are available for Glove, ELMo and BERT word emebddings. 
+
+*Even if the model is trained with contextul word emebddings, the ontology has to run on a dataset special designed for the non-contextual case.
   
- ## Pre-trained word embeddings:
+ ## Word embeddings:
+ Glove word embeddings (SemEval 2015): https://drive.google.com/file/d/14Gn-gkZDuTVSOFRPNqJeQABQxu-bZ5Tu/view?usp=sharing
+ Glove word embeddings (SemEval 2016): https://drive.google.com/file/d/1UUUrlF_RuzQYIw_Jk_T40IyIs-fy7W92/view?usp=sharing
+ ELMo word embeddings (SemEval 2015): https://drive.google.com/file/d/1GfHKLmbiBEkATkeNmJq7CyXGo61aoY2l/view?usp=sharing
+ ELMo word embeddings (SemEval 2016): https://drive.google.com/file/d/1OT_1p55LNc4vxc0IZksSj2PmFraUIlRD/view?usp=sharing
+ BERT word embeddings (SemEval 2015): https://drive.google.com/file/d/1wZr4_g3fDy47-vXzLGX8ERIr2gIu-RYn/view?usp=sharing
+ BERT word embeddings (SemEval 2016): https://drive.google.com/file/d/1eOc0pgbjGA-JVIx4jdA3m1xeYaf0xsx2/view?usp=sharing
+ 
+Download pre-trained word emebddings: 
 - GloVe: https://nlp.stanford.edu/projects/glove/
 - Word2vec: https://code.google.com/archive/p/word2vec/
 - FastText: https://fasttext.cc/docs/en/english-vectors.html
