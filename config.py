@@ -7,7 +7,7 @@ import sys
 
 FLAGS = tf.app.flags.FLAGS
 #general variables
-tf.app.flags.DEFINE_string('embedding_type','BERT_Large','can be: glove, word2vec-cbow, word2vec-SG, fasttext, BERT, BERT_Large, ELMo')
+tf.app.flags.DEFINE_string('embedding_type','BERT','can be: glove, word2vec-cbow, word2vec-SG, fasttext, BERT, BERT_Large, ELMo')
 tf.app.flags.DEFINE_integer("year",2016, "year data set [2014]")
 tf.app.flags.DEFINE_integer('embedding_dim', 768, 'dimension of word embedding')
 tf.app.flags.DEFINE_integer('batch_size', 20, 'number of example per batch')
