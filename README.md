@@ -8,17 +8,24 @@ The hybrid approach for aspect-based sentiment analysis (HAABSA) is a two-step m
  
  ## Software
 The HAABSA source code: https://github.com/ofwallaart/HAABSA needs to be installed (README). Then the following changes need to be done:
-- Updated files: config.py, att_layer.py, main.py, main_cross.py and main_hyper.py.
-- New files: 
-  - Hierarchical Attention: lcrModelAlt_hierarchical_v1, lcrModelAlt_hierarchical_v2, lcrModelAlt_hierarchical_v3, lcrModelAlt_hierarchical_v4;
+- Update files: config.py, att_layer.py, main.py, main_cross.py and main_hyper.py.
+- Add files: 
   - Context-dependent word embeddings: 
-    - getBERTusingColab.py, prepareBERT.py, prepareELMo.py (the files raw_data2015.txt and raw_data2016.txt are in the Data folder);
+    - getBERTusingColab.py (extract BERT word embeddings);
+    - prepareBERT.py (prepare the final BERT emebdding matrix, training and tesing datasets);
+    - prepareELMo.py (extract ELMo word emebddings and prepare the final ELMo embedding matrix, training and testing datasets);
+    - raw_data2015.txt, raw_data2016.txt (Data folder).
+  - Hierarchical Attention: 
+    - lcrModelAlt_hierarchical_v1 (first method);
+    - lcrModelAlt_hierarchical_v2 (second method);
+    - lcrModelAlt_hierarchical_v3 (third method);
+    - lcrModelAlt_hierarchical_v4 (fourth method).
 
 The training and testing datasets are in the Data folder for SemEval 2015 and SemEval 2016. The files are available for Glove, ELMo and BERT word emebddings. 
 
 *Even if the model is trained with contextul word emebddings, the ontology has to run on a dataset special designed for the non-contextual case.
   
- ## Word embeddings:
+ ## Word embeddings
  - GloVe word embeddings (SemEval 2015): https://drive.google.com/file/d/14Gn-gkZDuTVSOFRPNqJeQABQxu-bZ5Tu/view?usp=sharing
  - GloVe word embeddings (SemEval 2016): https://drive.google.com/file/d/1UUUrlF_RuzQYIw_Jk_T40IyIs-fy7W92/view?usp=sharing
  - ELMo word embeddings (SemEval 2015): https://drive.google.com/file/d/1GfHKLmbiBEkATkeNmJq7CyXGo61aoY2l/view?usp=sharing
