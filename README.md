@@ -11,9 +11,9 @@ The HAABSA source code: https://github.com/ofwallaart/HAABSA needs to be install
 - Update files: config.py, att_layer.py, main.py, main_cross.py and main_hyper.py.
 - Add files: 
   - Context-dependent word embeddings: 
-    - getBERTusingColab.py (extract BERT word embeddings);
+    - getBERTusingColab.py (extract the BERT word embeddings);
     - prepareBERT.py (prepare the final BERT emebdding matrix, training and tesing datasets);
-    - prepareELMo.py (extract ELMo word emebddings and prepare the final ELMo embedding matrix, training and testing datasets);
+    - prepareELMo.py (extract the ELMo word emebddings and prepare the final ELMo embedding matrix, training and testing datasets);
     - raw_data2015.txt, raw_data2016.txt (Data folder).
   - Hierarchical Attention: 
     - lcrModelAlt_hierarchical_v1 (first method);
