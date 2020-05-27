@@ -2,16 +2,17 @@
 The code for A Hybrid Approach for Aspect-Based Sentiment Analysis Using Contextual Word Emmbeddings and Hierarchical Attention
 
 The hybrid approach for aspect-based sentiment analysis (HAABSA) is a two-step method that classifies target sentiments using a domain sentiment ontology and a Multi-Hop LCR-Rot model as backup.
- - HAABSA Paper: https://personal.eur.nl/frasincar/papers/ESWC2019/eswc2019.pdf
+ - HAABSA paper: https://personal.eur.nl/frasincar/papers/ESWC2019/eswc2019.pdf
  
  Keeping the ontology, we optimise the embedding layer of the backup neural network with context-dependent word embeddings and integrate hierarchical attention in the model's architecture (HAABSA++).
  
  ## Software
-HAABSA source code: https://github.com/ofwallaart/HAABSA 
+The HAABSA source code: https://github.com/ofwallaart/HAABSA needs to be installed (README). Then the following changes need to be done:
 - Updated files: config.py, att_layer.py, main.py, main_cross.py and main_hyper.py.
 - New files: 
   - Hierarchical Attention: lcrModelAlt_hierarchical_v1, lcrModelAlt_hierarchical_v2, lcrModelAlt_hierarchical_v3, lcrModelAlt_hierarchical_v4;
-  - Context-dependent word embeddings: getBERTusingColab.py, prepareBERT.py, prepareELMo.py (the files raw_data2015.txt and raw_data2016.txt are in the Data folder);
+  - Context-dependent word embeddings: 
+    - getBERTusingColab.py, prepareBERT.py, prepareELMo.py (the files raw_data2015.txt and raw_data2016.txt are in the Data folder);
 
 The training and testing datasets are in the Data folder for SemEval 2015 and SemEval 2016. The files are available for Glove, ELMo and BERT word emebddings. 
 
