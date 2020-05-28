@@ -7,7 +7,7 @@ The hybrid approach for aspect-based sentiment analysis (HAABSA) is a two-step m
  Keeping the ontology, we optimise the embedding layer of the backup neural network with context-dependent word embeddings and integrate hierarchical attention in the model's architecture (HAABSA++).
  
  ## Software
-The HAABSA source code: https://github.com/ofwallaart/HAABSA needs to be installed (README). Then the following changes need to be done:
+The HAABSA source code: https://github.com/ofwallaart/HAABSA needs to be installed. Then the following changes need to be done:
 - Update files: config.py, att_layer.py, main.py, main_cross.py and main_hyper.py.
 - Add files: 
   - Context-dependent word embeddings: 
