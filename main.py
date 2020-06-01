@@ -60,8 +60,8 @@ def main(_):
         Ontology = OntReasoner()
         accuracyOnt, remaining_size = Ontology.run(backup,FLAGS.test_path_ont, runSVM)
         #out of sample accuracy
-        Ontology = OntReasoner()      
-        accuracyInSampleOnt, remainingInSample_size = Ontology.run(backup,FLAGS.train_path_ont, runSVM)        
+        #Ontology = OntReasoner()      
+        #accuracyInSampleOnt, remainingInSample_size = Ontology.run(backup,FLAGS.train_path_ont, runSVM)        
         if runSVM == True:
             test = FLAGS.remaining_svm_test_path
         else:
